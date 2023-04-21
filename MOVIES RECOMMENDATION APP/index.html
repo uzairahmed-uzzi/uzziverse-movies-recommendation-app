@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIE RECOMMENDATION APPLICATION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="dropDown">
+                <select name="genre" id="genre">
+                    <option value="all" disabled selected>GENRE</option>
+                    <option value="all">All</option>
+                </select>
+            </div>
+            <div class="dropDown">
+                <select name="year" id="year">
+                    <option value="all" disabled selected>YEAR</option>
+                    <option value="all">All</option>
+                </select>
+            </div>
+            <div class="dropDown">
+                
+                <select name="lang" id="lang">
+                    <option value="all" disabled selected>LANGUAGE</option>
+                    <option value="all">All</option>
+                </select>
+            </div>
+            <div class="dropDown">
+                <select name="rating" id="rating">
+                    <option value="all" disabled selected>RATING</option>
+                    <option value="all">All</option>
+                </select>
+            </div>
+            <div id="btn">
+                <button id="btnSearch">SEARCH</button>
+            </div>
+            
+        </nav>
+        <div id="searchBox">
+            <input type="text" name="search" placeholder="SEARCH MOVIE" id="search">
+        </div>
+    </header>
+    <div class="hr"> <hr></div>
+    <div id="films">
+    <div id="headingHeader"class="heading">
+        <div class="rank">
+            <h3>RANK</h3>
+        </div>
+        <div class="title">
+            <h3>TITLE</h3>
+        </div>
+        <div class="year">
+            <h3>YEAR</h3>
+        </div>        
+    </div>
+    <div id="loading">
+        <h1>LOADING</h1>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
